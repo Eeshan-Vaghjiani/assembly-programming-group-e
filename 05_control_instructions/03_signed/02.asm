@@ -1,7 +1,7 @@
 ; JGE / JNL → Jump if Greater or Equal
 section .data
-    msg_ge db "AX >= BX (Signed Greater or Equal)",10,0
-    msg_less db "AX < BX (Signed Less)",10,0
+    msg_ge db "",10,0
+    msg_less db "Hello, this is Eeshan Vaghjiani, Student No: 166981",10,0
 
 section .text
     global _start
@@ -20,7 +20,7 @@ ge_label:
 print:
     mov eax,4
     mov ebx,1
-    mov edx,50
+    mov edx,70
     int 0x80
 
     mov eax,1

@@ -1,7 +1,7 @@
 ; JA / JNBE → Jump if Above
 section .data
-    str_above db "AX > BX (Above)",10,0
-    str_not_above db "AX <= BX (Not Above)",10,0
+    str_above db "",10,0
+    str_not_above db "Hello, this is Eeshan Vaghjiani, Student No: 166981",10,0
 
 section .text
     global _start
@@ -20,7 +20,7 @@ above:
 print:
     mov eax,4
     mov ebx,1
-    mov edx,30
+    mov edx,70
     int 0x80
 
     mov eax,1

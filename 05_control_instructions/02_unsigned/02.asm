@@ -1,8 +1,8 @@
 ; JAE / JNB → Jump if Above or Equal
 
 section .data
-    str_ae db "AX >= BX (Above or Equal)",10,0
-    str_below db "AX < BX (Below)",10,0
+    str_ae db "",10,0
+    str_below db "Hello, this is Eeshan Vaghjiani, Student No: 166981",10,0
 
 section .text
     global _start
@@ -21,7 +21,7 @@ above_equal:
 print:
     mov eax,4
     mov ebx,1
-    mov edx,30
+    mov edx,70
     int 0x80
 
     mov eax,1
