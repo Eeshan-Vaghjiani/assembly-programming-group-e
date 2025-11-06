@@ -18,10 +18,10 @@ above:
     mov ecx, str_above
 
 print:
-    mov eax,4
-    mov ebx,1
-    mov edx,70
-    int 0x80
+    mov eax,4  ; display
+    mov ebx,1  ; how to display stdout
+    mov edx,30 ; len of what to display
+    int 0x80   ; call
 
     mov eax,1
     xor ebx,ebx

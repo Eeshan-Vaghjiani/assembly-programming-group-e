@@ -1,5 +1,10 @@
 ; simple loop
 
+; nasm -f elf32 loop1.asm -o loop1.o -g
+; ld -m elf_i386 loop1.o -o loop1
+; to run = ./loop1
+; to debug = gdb --silent loop1
+
 section .data
     str_msg db "Hello from LOOP!", 10
     len equ $ - str_msg
